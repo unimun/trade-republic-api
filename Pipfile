@@ -9,6 +9,7 @@ name = "pypi"
 six = ">=1.14.0"
 tox = "*"
 twine = "*"
+mock = "*"
 
 [requires]
 python_version = "3.11"
