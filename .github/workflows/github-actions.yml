@@ -183,11 +183,3 @@ jobs:
         TOXPYTHON: '${{ matrix.toxpython }}'
       run: >
         tox -e ${{ matrix.tox_env }} -v
-  finish:
-    needs: test
-    if: ${{ always() }}
-    runs-on: ubuntu-latest
-    steps:
-    - uses: coverallsapp/github-action@v2
-      with:
-        parallel-finished: true
