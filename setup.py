@@ -13,7 +13,7 @@ def read(*names, **kwargs):
 
 setup(
     name="trade-republic-api",
-    version="0.0.0",
+    version="0.0.1",
     license="BSD-2-Clause",
     description="Trade Republic API (Unofficial)",
     long_description="{}\n{}".format(
