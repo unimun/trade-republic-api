@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+six = ">=1.14.0"
+tox = "*"
+twine = "*"
+
+[requires]
+python_version = "3.11"
