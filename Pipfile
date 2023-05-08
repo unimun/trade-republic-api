@@ -14,6 +14,7 @@ twine = "*"
 mock = "*"
 pytest = "*"
 pytest-mock = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.11"
