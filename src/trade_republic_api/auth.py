@@ -14,7 +14,7 @@ class Auth:
         try:
             with cache_dir.joinpath(self.keyfile).open(mode="rb") as f:
                 self.signing_key = SigningKey.from_pem(f.read(), hashfunc=self.hashfunc)
-        except:
+        except ValueError:
             self.signing_key = SigningKey.generate(curve=NIST256p, hashfunc=hashlib.sha512)
             pem = self.signing_key.to_pem()
             cache_dir.mkdir(parents=True, exist_ok=True)
