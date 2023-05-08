@@ -4,12 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ecdsa = "*"
+click = "*"
 
 [dev-packages]
 six = ">=1.14.0"
 tox = "*"
 twine = "*"
 mock = "*"
+pytest = "*"
+pytest-mock = "*"
 
 [requires]
 python_version = "3.11"
